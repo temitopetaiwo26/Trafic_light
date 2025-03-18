@@ -1,49 +1,51 @@
+
+
+
 body{
     background-color: black;
 }
-.traffic_container{
+
+
+   
+
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
     border: 10px solid;
     border-color: gray;
     width: 170px;
     height: 510px;
-    margin-left: 700px;
-    margin-top: 200px;
     background-color: white;
+    justify-self: center;
+    
 }
-.red{
+.light {
+    border-radius: 50%;
+    transition: background 0.5s;
     border: 10px solid;
     width: 100px;
     height: 100px;
-    border-radius: 1000%;
-    background-color: red;
     margin-top: 30px;
     border-color: gray;
     padding: 25px 25px;
-    margin-top: 0px;
-}
+    transition: background 0.5ms;
 
-.yellow{
-    border: 10px solid;
-    width: 100px;
-    height: 100px;
-    border-radius: 1000%;
-    background-color: yellow;
-    margin-top: 30px;
-    border-color: gray;
-    padding: 25px 25px;
-    margin-top: 0px;
-}
+    }
+    
+    .red.active {
+        background: red;
+    }
+    
+    .yellow.active {
+        background: yellow;
+    }
+    
+    .green.active {
+        background: green;
+    }
 
-.green{
-    border: 10px solid;
-    width: 100px;
-    height: 100px;
-    border-radius: 1000%;
-    background-color: green;
-    margin-top: 30px;
-    border-color: gray;
-    padding: 25px 25px;
-    margin-top: 0px;
-
-}
     
